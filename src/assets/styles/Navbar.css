@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&family=Roboto+Mono:ital,wght@0,400;1,600&display=swap');
 
 .navbar-wrapper{
-    position: fixed;
-    top:0;
     width: 100%;
     display:block;
     height:80px;
-
-    /* position:sticky;
-    top:0px;
-    height:80px; */
+    position:sticky;
+    top:0;
     background-color: var(--navy);
     opacity: 0.8;
 }
 .navbar-menu{
-    display: flex;
-    justify-content: flex-end;
     background-color: transparent;
     align-items: center;
     padding: 2rem;
     margin: 0;
+}
+.s-nav{
+display:flex;
+justify-content: flex-end;
+}
 
+.s-nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+}
+
+
+.l-nav{
+display:none;
 }
 
 .navbar-item a:hover{
@@ -49,24 +58,15 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .navbar-wrapper{
-
-    }
-    .navbar-menu{
-    }
-    
-    .navbar-item a:hover{
-    }
-    
-    .navbar-logo{
-    }
-    
-    .navbar-menu li{
-    }
-    
-    .navbar-menu li a{
-    }
-    .navbar-menu li a span{
-
-    }
+    .l-nav{
+        display:block;
+        justify-content: flex-end;
+        }
+        .l-nav-list{
+            display:flex;
+            justify-content: flex-end;
+            }
+        .s-nav{
+        display:none;
+        }
   }

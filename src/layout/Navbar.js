@@ -1,26 +1,23 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/Navbar.css";
 import DropDown from "../components/DropDown";
+import RegularNav from "../components/RegularNav";
 
 const Navbar = ({ navbarMenu }) => {
   return (
-    <div className="navbar-wrapper">
-      <ul className="navbar-menu">
-        <div className="navbar-logo">navbar logo</div>
-        {navbarMenu.map((item) => {
-          return (
-            <li className="navbar-item" key={item.id}>
-              <Link href={item.path}>
-                <span>{item.number}.</span>
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
-
-        <DropDown navbarMenu={navbarMenu} />
-      </ul>
-    </div>
+    <>
+      <div className="navbar-wrapper l-nav">
+        <ul className="navbar-menu l-nav-list">
+          <div className="navbar-logo">navbar logo</div>
+          <RegularNav navbarMenu={navbarMenu} />
+        </ul>
+      </div>
+      <div className="s-nav">
+        <ul className="navbar-menu s-nav-list">
+          <DropDown navbarMenu={navbarMenu} />
+        </ul>
+      </div>
+    </>
   );
 };
 

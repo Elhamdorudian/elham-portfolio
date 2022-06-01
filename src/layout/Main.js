@@ -1,4 +1,4 @@
-import Introduction from "../assets/components/Introduction";
+import Introduction from "../components/Introduction";
 import "../assets/styles/Main.css";
 import LeftSBar from "./LeftSBar";
 import RightSBar from "./RightSBar";
@@ -6,8 +6,8 @@ import RightSBar from "./RightSBar";
 const Main = ({ socials }) => {
   return (
     <div className="main-wrapper">
-      <div className="left-nav">
-        <ul className="left-nav-social">
+      <div className="side-nav">
+        <ul className="side-nav-list">
           {socials.map((social) => {
             return <LeftSBar key={social.id} social={social} />;
           })}
@@ -19,8 +19,8 @@ const Main = ({ socials }) => {
       <div className="main-content">
         <Introduction />
       </div>
-      <div className="right-nav">
-        <ul className="right-nav-list">
+      <div className="side-nav right-nav">
+        <ul className="side-nav-list right-nav-list">
           <RightSBar />
         </ul>
       </div>

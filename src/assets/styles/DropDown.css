@@ -2,8 +2,41 @@
     display: flex;
     flex-direction: column;
 }
+
 .close{
-    display:none
+display: none;
 }
-.dropdown{
+.long{
+    height: 100vh;
 }
+.short{
+height:auto;
+}
+.burger-wrapper{
+    position:fixed;
+    /* display: flex;
+    flex-direction: column; */
+    top:0;
+    padding: 1rem;
+
+background-color: var(--navy);
+width: 300px;
+    
+}
+
+.burger-menu{
+    fill: var(--green);
+    margin:0 auto;
+}
+
+.navbar-icon{
+    padding:0;
+}
+
+.s-navbar-item{
+height:100px;
+padding-top:50px;
+text-align: center;
+margin: 0 auto !important;
+}
+
