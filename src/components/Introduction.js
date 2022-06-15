@@ -1,3 +1,4 @@
+import "../assets/styles/Introduction.css";
 const Introduction = () => {
   return (
     <div className="main-content-intro">
@@ -12,6 +13,7 @@ const Introduction = () => {
         </a>
         .
       </p>
+      <button className="cv-btn">Check out my CV</button>
     </div>
   );
 };
