@@ -1,0 +1,44 @@
+.main-content-about{
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 6rem;
+}
+.about-h{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: var(--white);
+}
+
+.about-h::after{
+    content: "";
+    display: block;
+    position: relative;
+    left:20vw;
+    top: -12px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--dark);
+}
+
+.about-h span{
+    color: var(--green);
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (min-width: 768px) {
+     
+    .about-h{
+         font-size: 1.5rem;
+      }
+     
+  }
+  @media only screen and (min-width: 1024px){
+    .main-content-about{
+        padding-top: 8rem;
+    }
+  }
+

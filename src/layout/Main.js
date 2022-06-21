@@ -1,4 +1,5 @@
 import Introduction from "../components/Introduction";
+import AboutMe from "../components/AboutMe";
 import "../assets/styles/Main.css";
 import LeftSBar from "./LeftSBar";
 import RightSBar from "./RightSBar";
@@ -18,6 +19,7 @@ const Main = ({ socials }) => {
       </div>
       <div className="main-content">
         <Introduction />
+        <AboutMe />
       </div>
       <div className="side-nav right-nav">
         <ul className="side-nav-list right-nav-list">
