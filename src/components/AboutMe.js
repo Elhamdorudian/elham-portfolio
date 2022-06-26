@@ -1,4 +1,5 @@
 import "../assets/styles/AboutMe.css";
+import myImg from "../assets/images/myPic.jpeg";
 const AboutMe = () => {
   return (
     <div className="main-content-about">
@@ -14,7 +15,9 @@ const AboutMe = () => {
           </a>
           .
         </p>
-        <div>dfjdlfkjs</div>
+        <div className="about-img-wrapper">
+          <img src={myImg} alt="myImg" />
+        </div>
       </div>
     </div>
   );
