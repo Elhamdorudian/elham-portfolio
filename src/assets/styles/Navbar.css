@@ -12,7 +12,7 @@
 .navbar-menu{
     background-color: transparent;
     align-items: center;
-    padding: 2rem;
+    padding:4rem;
     margin: 0;
 }
 .s-nav{
@@ -30,6 +30,10 @@ justify-content: flex-end;
 
 .l-nav{
 display:none;
+}
+
+.navbar-icon{
+    padding-top:1rem !important;
 }
 
 .navbar-item a:hover{

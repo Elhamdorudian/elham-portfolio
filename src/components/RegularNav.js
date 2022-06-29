@@ -5,10 +5,10 @@ const RegularNav = ({ navbarMenu }) => {
       {navbarMenu.map((item) => {
         return (
           <li className="navbar-item" key={item.id}>
-            <Link to={item.path}>
+            <a href={item.path}>
               <span>{item.number}.</span>
               {item.title}
-            </Link>
+            </a>
           </li>
         );
       })}

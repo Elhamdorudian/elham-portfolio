@@ -1,19 +1,32 @@
 import "../assets/styles/AboutMe.css";
 import myImg from "../assets/images/myPic.jpeg";
 const AboutMe = () => {
+  const skills = [
+    "Javascript",
+    "React",
+    "Typescript",
+    "node.js",
+    "Jest",
+    "React Testing Library",
+  ];
+
   return (
-    <div className="main-content-about">
+    <div className="main-content-about" id="about">
       <h3 className="about-h">
         <span>01. </span>About Me
       </h3>
       <div className="about-content">
         <p className="main-content-desc">
-          I'm a web developer with a passion to learn new tech and tools. I'm
-          currently working as a Front-End Developer and Marketing-Analystat{" "}
-          <a href="https://www.mci.ir/" rel="noreferrer" target="_blank">
-            MCI
-          </a>
-          .
+          Hello! My name is Elham and I enjoy creating things that live on the
+          internet. I started my career as a marketing specialist at a
+          telecommunication company and got interested in programming and
+          specially web design on 2020. Here are a few technologies I have been
+          working with recently:
+          <ul className="about-skills">
+            {skills.map((skill) => (
+              <li>{skill}</li>
+            ))}
+          </ul>
         </p>
         <div className="about-img-wrapper">
           <img src={myImg} alt="myImg" />

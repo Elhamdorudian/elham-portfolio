@@ -11,10 +11,22 @@ import Instagram from "../src/assets/icons/instagram.svg";
 // library.add(fas);
 
 const navbarMenu = [
-  { path: "/", id: 0, name: "about", number: "01", title: "About" },
-  { path: "/", id: 1, name: "experience", number: "02", title: "Experience" },
-  { path: "/", id: 2, name: "projects", number: "03", title: "Projects" },
-  { path: "/", id: 3, name: "contact", number: "04", title: "Contact" },
+  { path: "#about", id: 0, name: "about", number: "01", title: "About" },
+  {
+    path: "#about",
+    id: 1,
+    name: "experience",
+    number: "02",
+    title: "Experience",
+  },
+  {
+    path: "#project",
+    id: 2,
+    name: "projects",
+    number: "03",
+    title: "Projects",
+  },
+  { path: "#contact", id: 3, name: "contact", number: "04", title: "Contact" },
 ];
 
 const socials = [
