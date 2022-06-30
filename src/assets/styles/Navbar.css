@@ -8,6 +8,7 @@
     top:0;
     background-color: var(--navy);
     opacity: 0.8;
+    z-index: 1;
 }
 .navbar-menu{
     background-color: transparent;

@@ -13,7 +13,7 @@ import Instagram from "../src/assets/icons/instagram.svg";
 const navbarMenu = [
   { path: "#about", id: 0, name: "about", number: "01", title: "About" },
   {
-    path: "#about",
+    path: "#experiences",
     id: 1,
     name: "experience",
     number: "02",

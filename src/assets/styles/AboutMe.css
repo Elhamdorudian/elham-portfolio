@@ -1,14 +1,14 @@
-.main-content-about{
+.main-content-section{
     font-family: 'Roboto Mono', monospace;
     padding-top: 6rem;
 }
-.about-h{
+.section-h{
     font-size: 1rem;
     letter-spacing: 0.2rem;
     color: var(--white);
 }
 
-.about-h::after{
+.section-h::after{
     content: "";
     display: block;
     position: relative;
@@ -20,7 +20,7 @@
     background-color: var(--dark);
 }
 
-.about-h span{
+.section-h span{
     color: var(--green);
 }
 
@@ -31,15 +31,17 @@
     height: 40vw;
     margin:5rem auto;
     opacity: 90%;
+    z-index: -1;
 }
 
-.about-content img{
+.section-content img{
 position: relative;
 border-radius: 5px;
 left:-20px;
 top:-20px;
 width:40vw;
 height: 40vw;
+z-index:-1;
 }
 
 .about-img-wrapper:hover{
@@ -60,7 +62,7 @@ opacity: 100%;
 
 @media only screen and (min-width:300px) {
 
-      .about-h::after{
+      .section-h::after{
         left:50%;
         top: -12px;
         width: 35vw;
@@ -69,7 +71,7 @@ opacity: 100%;
   }
   @media only screen and (min-width:400px) {
 
-    .about-h::after{
+    .section-h::after{
       left:40%;
       top: -12px;
       width: 35vw;
@@ -79,7 +81,7 @@ opacity: 100%;
 
 @media only screen and (min-width: 768px) {
 
-    .about-content{
+    .section-content{
         display: grid;
         grid-template-columns: 3fr 2fr;
         gap:50px;
@@ -92,16 +94,16 @@ opacity: 100%;
         height: 20vw;
     }
 
-    .about-content img{
+    .section-content img{
         width:20vw;
         height: 20vw;
         }
      
-    .about-h{
+    .section-h{
          font-size: 1.5rem;
       }
 
-      .about-h::after{
+      .section-h::after{
         left:40%;
         top: -12px;
         width: 40vw;
@@ -125,11 +127,11 @@ opacity: 100%;
 
   }
   @media only screen and (min-width: 1024px){
-    .main-content-about{
+    .main-content-section{
         padding-top: 10rem;
     }
 
-    .about-h::after{
+    .section-h::after{
         left:30%;
         top: -12px;
         width: 30vw;
