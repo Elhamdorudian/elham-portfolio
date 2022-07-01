@@ -1,10 +1,12 @@
 import Experience from "./Experience";
 import "../assets/styles/Experiences.css";
+import { useState } from "react";
 const Experiences = () => {
-  const experiences = [
+  const [experiences, setExperiences] = useState([
     {
       id: 1,
       title: "Engineering Management",
+      isSelected: true,
       University: "University of Ottawa",
       location: "Ottawa, Canada",
       date: "Sep 2022 - Present",
@@ -13,6 +15,7 @@ const Experiences = () => {
     {
       id: 2,
       title: "Front-End Developer",
+      isSelected: false,
       company: "MCI",
       location: "Tehran, Iran",
       date: "May 2018 - Aug 2022",
@@ -21,6 +24,7 @@ const Experiences = () => {
     {
       id: 3,
       title: "Data Analyst",
+      isSelected: false,
       company: "MCI",
       location: "Tehran, Iran",
       date: "May 2016 - Aug 2018",
@@ -29,6 +33,7 @@ const Experiences = () => {
     {
       id: 4,
       title: "MBA",
+      isSelected: false,
       company: "Sharif University of Technology",
       location: "Tehran, Iran",
       date: "Sep 2013 - Feb 2016",
@@ -37,19 +42,20 @@ const Experiences = () => {
     {
       id: 5,
       title: "Mechanical Engineering",
+      isSelected: false,
       company: "Sharif University of Technology",
       location: "Tehran, Iran",
       date: "Sep 2009 - Aug 2013",
       content: "lorem lorem lorem5",
     },
-  ];
+  ]);
   return (
     <div className="main-content-section" id="experiences">
       <h3 className="section-h">
         <span>02. </span>My Experiences
       </h3>
       <div className="section-content main-content-desc">
-        <Experience experiences={experiences} />
+        <Experience experiences={experiences} setExperiences={setExperiences} />
         {/* {experiences.map((experience) => {
           return ;
         })} */}

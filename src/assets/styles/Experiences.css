@@ -5,6 +5,56 @@
 }
 
 .exp-titles{
-    padding-left: 2rem;
-    border-left: 2px solid var(--gray);
+    /* padding-left: 2rem; */
+    /* border-left: 2px solid var(--gray); */
+}
+
+.exp-btn{
+    background-color: transparent;
+    color: inherit;
+    border:none;
+    outline:none;
+    padding:1.5rem;
+    width: 35vw;
+    text-align: left;
+    cursor: pointer;
+}
+
+.exp-btn:hover{
+    background-color: var(--lightNavy);
+}
+
+@keyframes experience{
+    0%{
+        top:0px;
+    }
+    100%{
+        top:-3px;
+    }
+}
+
+.active {
+    background-color: var(--lightNavy);
+    border-left: 3px solid var(--green);
+    color:var(--green);
+    animation: experience 2s ease-in-out;
+    -webkit-animation: experience 2s ease-in-out;
+    
+  }
+  .deactive {
+    background-color: transparent;
+    border-left: 3px solid var(--gray);
+
+  }
+
+@media only screen and (min-width: 500px){
+    .exp-btn{
+        width: 27vw;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .exp-btn{
+        width: 17vw;
+    }
 }
