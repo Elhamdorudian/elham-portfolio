@@ -1,6 +1,7 @@
 .main-content-section{
     font-family: 'Roboto Mono', monospace;
     padding-top: 6rem;
+    background-color: inherit;
 }
 .section-h{
     font-size: 1rem;
