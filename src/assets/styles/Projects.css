@@ -1,0 +1,76 @@
+.section-h-proj::after{
+    content: "";
+    display: block;
+    position: relative;
+    left:80%;
+    top: -12px;
+    width: 20vw;
+    height: 1px;
+    margin-left: 20px;
+    background-color: var(--dark);
+}
+
+/* .proj-img{
+background-color: red;
+width:400px;
+height:200px;
+margin-top:-20px;
+}
+
+.proj-exp{
+    background-color: blue;
+    width:400px;
+    height:100px;
+    position:absolute;
+    left:500px;
+    margin-top:20px;
+} */
+
+/* .project-contetn{
+    grid-auto-flow: revert;
+} */
+
+@media only screen and (min-width:300px) {
+
+    .section-h::after{
+      left:50%;
+      top: -12px;
+      width: 35vw;
+  }
+   
+}
+@media only screen and (min-width:400px) {
+
+  .section-h::after{
+    left:45%;
+    top: -12px;
+    width: 35vw;
+}
+ 
+}
+
+@media only screen and (min-width: 768px) {
+
+    .section-h-proj::after{
+      left:40%;
+      top: -12px;
+      width: 40vw;
+  }
+}
+@media only screen and (min-width: 1024px){
+
+  .section-h-proj::after{
+      left:60%;
+      top: -12px;
+      width: 20vw;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .section-h-proj::after{
+      left:40%;
+      top: -12px;
+      width: 30vw;
+  }
+}
+

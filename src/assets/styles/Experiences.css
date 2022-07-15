@@ -21,11 +21,17 @@
     flex-direction: row;
 }
 
+/* .section-h-gen{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: var(--white);
+} */
+
 .section-h-exp::after{
     content: "";
     display: block;
     position: relative;
-    left:65%;
+    left:73%;
     top: -12px;
     width: 20vw;
     height: 1px;
@@ -93,6 +99,10 @@ display: block;
     .exp-btn{
         width: 27vw;
     }
+    .section-h-exp::after{
+        left:60%;
+        width: 30vw;
+    }
 }
 
 @media only screen and (min-width: 768px){
@@ -101,7 +111,7 @@ display: block;
     }
 
     .section-h-exp::after{
-        left:75%;
+        left:78%;
         width: 20vw;
     }
 }
@@ -118,7 +128,7 @@ display: block;
         width: 17vw;
     }
     .section-h-exp::after{
-        left:45%;
+        left:33%;
         width: 25vw;
     }
 }

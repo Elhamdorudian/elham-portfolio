@@ -4,6 +4,7 @@ import "../assets/styles/Main.css";
 import LeftSBar from "./LeftSBar";
 import RightSBar from "./RightSBar";
 import Experiences from "../components/Experiences";
+import Projects from "../components/Projects";
 
 const Main = ({ socials }) => {
   return (
@@ -22,6 +23,7 @@ const Main = ({ socials }) => {
         <Introduction />
         <AboutMe />
         <Experiences />
+        <Projects/>
       </div>
       <div className="side-nav right-nav">
         <ul className="side-nav-list right-nav-list">

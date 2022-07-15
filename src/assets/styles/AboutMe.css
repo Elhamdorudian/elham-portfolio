@@ -3,7 +3,7 @@
     padding-top: 6rem;
     background-color: inherit;
 }
-.section-h{
+.section-h-gen{
     font-size: 1rem;
     letter-spacing: 0.2rem;
     color: var(--white);
@@ -13,7 +13,7 @@
     content: "";
     display: block;
     position: relative;
-    left:70%;
+    left:78%;
     top: -12px;
     width: 20vw;
     height: 1px;
@@ -21,7 +21,7 @@
     background-color: var(--dark);
 }
 
-.section-h span{
+.section-no{
     color: var(--green);
 }
 
@@ -70,10 +70,11 @@ opacity: 100%;
     }
      
   }
+
   @media only screen and (min-width:400px) {
 
     .section-h::after{
-      left:40%;
+      left:45%;
       top: -12px;
       width: 35vw;
   }
@@ -100,7 +101,7 @@ opacity: 100%;
         height: 20vw;
         }
      
-    .section-h{
+    .section-h-gen{
          font-size: 1.5rem;
       }
 
@@ -127,13 +128,22 @@ opacity: 100%;
 
 
   }
+  
   @media only screen and (min-width: 1024px){
     .main-content-section{
         padding-top: 10rem;
     }
 
     .section-h::after{
-        left:30%;
+        left:27% !important;
+        top: -12px;
+        width: 30vw;
+    }
+  }
+
+  @media only screen and (min-width: 1200px){
+    .section-h::after{
+        left:20% !important;
         top: -12px;
         width: 30vw;
     }

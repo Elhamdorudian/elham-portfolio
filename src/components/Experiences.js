@@ -51,8 +51,8 @@ const Experiences = () => {
   ]);
   return (
     <div className="main-content-section" id="experiences">
-      <h3 className="section-h-exp section-h">
-        <span>02. </span>My Experiences
+      <h3 className="section-h-exp section-h-gen">
+        <span className="section-no">02. </span>My Experiences
       </h3>
       <div className=" main-content-desc">
         <Experience experiences={experiences} setExperiences={setExperiences} />

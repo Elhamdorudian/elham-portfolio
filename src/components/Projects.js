@@ -1,22 +1,28 @@
-import "../assets/styles/AboutMe.css";
-import myImg from "../assets/images/myPic.jpeg";
-const AboutMe = () => {
-  const skills = [
-    "Javascript",
-    "React",
-    "Typescript",
-    "node.js",
-    "Jest",
-    "React Testing Library",
-  ];
+import "../assets/styles/Projects.css";
+const Projects = () => {
+//   const skills = [
+//     "Javascript",
+//     "React",
+//     "Typescript",
+//     "node.js",
+//     "Jest",
+//     "React Testing Library",
+//   ];
 
   return (
     <div className="main-content-section" id="about">
-      <h3 className="section-h section-h-gen">
-        <span className="section-no">01. </span>About Me
+      <h3 className="section-h-gen section-h-proj">
+        <span className="section-no">03. </span>Some Things I've Built
       </h3>
-      <div className="section-content">
-        <div className="main-content-desc">
+      <div className="section-content project-content">
+          <div className="proj-img">
+a
+          </div>
+          <div className="proj-exp">
+b
+          </div>
+
+        {/* <div className="main-content-desc">
           <p>
             Hello! My name is Elham and I enjoy creating things that live on the
             internet. I started my career as a marketing specialist at a
@@ -30,13 +36,10 @@ const AboutMe = () => {
               <li key={skill}>{skill}</li>
             ))}
           </ul>
-        </div>
-        <div className="about-img-wrapper">
-          <img src={myImg} alt="myImg" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default AboutMe;
+export default Projects;
