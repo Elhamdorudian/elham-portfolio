@@ -7,7 +7,7 @@ const Experiences = () => {
       id: 1,
       title: "Engineering Management",
       isSelected: true,
-      University: "University of Ottawa",
+      company: "University of Ottawa - Student",
       location: "Ottawa, Canada",
       date: "Sep 2022 - Present",
       content: "lorem lorem lorem1",
@@ -51,14 +51,11 @@ const Experiences = () => {
   ]);
   return (
     <div className="main-content-section" id="experiences">
-      <h3 className="section-h">
+      <h3 className="section-h-exp section-h">
         <span>02. </span>My Experiences
       </h3>
-      <div className="section-content main-content-desc">
+      <div className=" main-content-desc">
         <Experience experiences={experiences} setExperiences={setExperiences} />
-        {/* {experiences.map((experience) => {
-          return ;
-        })} */}
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const Experience = ({ experiences, setExperiences }) => {
 
   return (
     <div className="exp-content">
-      <div>
+      <div className="exp-titles-wrapper">
       {experiences.map((exp) => {
         return (
           <>
@@ -31,12 +31,12 @@ const Experience = ({ experiences, setExperiences }) => {
       })}
       </div>
       
-      <div>
+      <div className="exp-details-wrapper">
             {experiences.map((exp) => {
         return (
           <>
             <div className={`exp-detail ${exp.isSelected ? "show-details" : "hide-details"}`}>
-              <p>{exp.company}</p>
+              <p className="detail-company">@ {exp.company}</p>
               <p>{exp.location}</p>
               <p>{exp.date}</p>
               <p>{exp.content}</p>
