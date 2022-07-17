@@ -14,12 +14,14 @@ const Projects = () => {
       <h3 className="section-h-gen section-h-proj">
         <span className="section-no">03. </span>Some Things I've Built
       </h3>
-      <div className="section-content project-content">
-          <div className="proj-img">
+      <div className=" project-content">
+          <div className="proj-imgs">
 a
           </div>
           <div className="proj-exp">
-b
+<div>b</div>
+<div>c</div>
+<div>d</div>
           </div>
 
         {/* <div className="main-content-desc">

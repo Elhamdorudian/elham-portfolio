@@ -10,25 +10,24 @@
     background-color: var(--dark);
 }
 
-/* .proj-img{
+.project-content{
+  position: relative;
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+}
+
+.proj-imgs{
 background-color: red;
-width:400px;
-height:200px;
-margin-top:-20px;
+grid-area: 1/1/6/5;
 }
 
 .proj-exp{
+  display:flex;
+  flex-direction: column;
     background-color: blue;
-    width:400px;
-    height:100px;
-    position:absolute;
-    left:500px;
-    margin-top:20px;
-} */
-
-/* .project-contetn{
-    grid-auto-flow: revert;
-} */
+    grid-area:2/4/6/7;
+}
 
 @media only screen and (min-width:300px) {
 
