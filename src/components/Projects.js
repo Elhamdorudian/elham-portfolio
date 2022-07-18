@@ -1,45 +1,51 @@
 import "../assets/styles/Projects.css";
+import Todo from "../assets/images/Todo.jpeg";
+import Timer from "../assets/images/Timer.jpeg";
+import MyBlog from "../assets/images/MyBlog.jpeg";
+import ProjectsDetail from "./ProjectsDetail";
 const Projects = () => {
-//   const skills = [
-//     "Javascript",
-//     "React",
-//     "Typescript",
-//     "node.js",
-//     "Jest",
-//     "React Testing Library",
-//   ];
+  const projects = [
+{
+  id:1,
+  title:"Personal Blog",
+  img: MyBlog,
+  content: "1Lorem Ipsum is simply dummyok. It h",
+  link:"https://elhamdorudian.github.io/eli-blog/",
+  github:"https://github.com/Elhamdorudian/eli-blog"
+},
+{
+  id:2,
+  title:"Timer",
+  img: Timer,
+  content: "1Lorem Ipsum is simply dummyok. It h",
+  link:"https://elhamdorudian.github.io/simple-timer/",
+  github:"https://github.com/Elhamdorudian/simple-timer"
+},
+{
+  id:3,
+  title:"Todo List",
+  img: Todo,
+  content: "1Lorem Ipsum is simply dummyok. It h",
+  link:"https://elhamdorudian.github.io/Todo_List/",
+  github:"https://github.com/Elhamdorudian/Todo_List"
+},
+{
+  id:4,
+  title:"Weather App",
+  img: Todo,
+  content: "1Lorem Ipsum is simply dummyok. It h",
+  link:"",
+  github:"https://github.com/Elhamdorudian/my-weather-app"
+},
+
+  ];
 
   return (
     <div className="main-content-section" id="about">
       <h3 className="section-h-gen section-h-proj">
         <span className="section-no">03. </span>Some Things I've Built
       </h3>
-      <div className=" project-content">
-          <div className="proj-imgs">
-a
-          </div>
-          <div className="proj-exp">
-<div>b</div>
-<div>c</div>
-<div>d</div>
-          </div>
-
-        {/* <div className="main-content-desc">
-          <p>
-            Hello! My name is Elham and I enjoy creating things that live on the
-            internet. I started my career as a marketing specialist at a
-            telecommunication company and got interested in programming and
-            specially web design on 2020. Here are a few technologies I have
-            been working with recently:
-          </p>
-
-          <ul className="about-skills">
-            {skills.map((skill) => (
-              <li key={skill}>{skill}</li>
-            ))}
-          </ul>
-        </div> */}
-      </div>
+      <ProjectsDetail projects={projects} />
     </div>
   );
 };

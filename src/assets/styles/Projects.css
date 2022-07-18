@@ -11,10 +11,11 @@
 }
 
 .project-content{
+  padding-top:100px;
   position: relative;
   display:grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: 70px 70px 70px 70px 70px;
 }
 
 .proj-imgs{
@@ -22,11 +23,26 @@ background-color: red;
 grid-area: 1/1/6/5;
 }
 
+.project-img{
+  width:100%;
+  height:100%;
+}
+
 .proj-exp{
   display:flex;
   flex-direction: column;
     background-color: blue;
-    grid-area:2/4/6/7;
+    grid-area:2/4/6/7 !important;
+    order:1;
+}
+
+.content-wrapper{
+  height:70%;
+  max-width:300px;
+}
+
+.project-exp-content{
+background-color: green;
 }
 
 @media only screen and (min-width:300px) {
