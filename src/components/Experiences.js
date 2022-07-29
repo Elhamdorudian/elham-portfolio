@@ -5,15 +5,6 @@ const Experiences = () => {
   const [experiences, setExperiences] = useState([
     {
       id: 1,
-      title: "Engineering Management",
-      isSelected: true,
-      company: "University of Ottawa - Student",
-      location: "Ottawa, Canada",
-      date: "Sep 2022 - Present",
-      content: "lorem lorem lorem1",
-    },
-    {
-      id: 2,
       title: "Front-End Developer",
       isSelected: false,
       company: "MCI",
@@ -22,7 +13,7 @@ const Experiences = () => {
       content: "lorem lorem lorem2",
     },
     {
-      id: 3,
+      id: 2,
       title: "Data Analyst",
       isSelected: false,
       company: "MCI",
@@ -31,7 +22,7 @@ const Experiences = () => {
       content: "lorem lorem lorem3",
     },
     {
-      id: 4,
+      id: 3,
       title: "MBA",
       isSelected: false,
       company: "Sharif University of Technology",
@@ -40,7 +31,7 @@ const Experiences = () => {
       content: "lorem lorem lorem4",
     },
     {
-      id: 5,
+      id: 4,
       title: "Mechanical Engineering",
       isSelected: false,
       company: "Sharif University of Technology",

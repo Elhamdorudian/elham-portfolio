@@ -15,18 +15,17 @@ const ProjectsDetail = ({projects}) => {
 
           </div>
           <div className="proj-exp">
-
+            <h2>
+              <a href={project.link} target="_blank" rel="noreferrer">{project.title}</a>
+            </h2>
             <div className="content-wrapper">
                 <p className="project-exp-content">
                 {project.content}
                 </p>
-                
             </div>
-            <div>
-              <a href={project.github} target="_blank" rel="noreferrer" >github</a>
-            </div>
-            <div>
-            <a href={project.link} target="_blank" rel="noreferrer" >link</a>
+            <div className="proj-links">
+                <a href={project.github} target="_blank" rel="noreferrer" >github</a>
+                <a href={project.link} target="_blank" rel="noreferrer" >link</a>
             </div>
 
           </div>
