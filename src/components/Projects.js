@@ -18,7 +18,7 @@ const Projects = () => {
   id:2,
   title:"Weather App",
   img: WeatherApp,
-  content: "Here you can find a weather forcast for cities around the world. It uses an API from Accuweather and is written with vanilla Javascript.",
+  content: "Here you can find a weather forcast for cities around the world. It uses an API from Accuweather and is written with vanilla Javascript. The app also shows you the weather image and Icon and has an acceptable visualization same as well known ones.",
   link:"",
   github:"https://github.com/Elhamdorudian/my-weather-app"
 },
