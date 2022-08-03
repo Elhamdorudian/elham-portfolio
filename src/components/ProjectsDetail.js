@@ -1,4 +1,5 @@
-// import Link from react-router-dom;
+
+import Black from "../assets/images/black.PNG"
 const ProjectsDetail = ({projects}) => {
 
 
@@ -10,8 +11,11 @@ const ProjectsDetail = ({projects}) => {
       <div className="project-content" key={project.id}>
 
           <div className="proj-imgs">
-            
+              
+              <img className="overlay" src={Black} alt="My Projects"/>
               <img className="project-img" src={project.img} alt="My Projects"/>
+              
+              {/* <div id="overlay"></div> */}
 
           </div>
           <div className="proj-exp">
