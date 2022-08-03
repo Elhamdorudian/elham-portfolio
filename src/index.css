@@ -22,7 +22,7 @@ code {
 }
 
 :root {
-  --green: #64ffda;
+  --green: rgb(99, 255, 219);
   --darkgreen: #032a2a;
   --navy: #011627;
   --lightNavy: #02243f;
