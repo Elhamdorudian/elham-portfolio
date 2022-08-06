@@ -6,7 +6,7 @@ const Experiences = () => {
     {
       id: 1,
       title: "Front-End Developer",
-      isSelected: false,
+      isSelected: true,
       company: "MCI",
       location: "Tehran, Iran",
       date: "May 2018 - Aug 2022",
@@ -14,7 +14,7 @@ const Experiences = () => {
     },
     {
       id: 2,
-      title: "Data Analyst",
+      title: "Business Analyst",
       isSelected: false,
       company: "MCI",
       location: "Tehran, Iran",
@@ -32,7 +32,7 @@ const Experiences = () => {
     },
     {
       id: 4,
-      title: "Mechanical Engineering",
+      title: "Engineering",
       isSelected: false,
       company: "Sharif University of Technology",
       location: "Tehran, Iran",

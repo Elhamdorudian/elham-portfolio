@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/Main.css";
 import "../assets/styles/LeftSBar.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LeftSBar = ({ social }) => {
   return (

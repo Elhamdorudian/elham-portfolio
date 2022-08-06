@@ -4,7 +4,7 @@ import Timer from "../assets/images/Timer.jpeg";
 import MyBlog from "../assets/images/MyBlog.jpeg";
 import WeatherApp from "../assets/images/WeatherApp.jpeg";
 import ProjectsDetail from "./ProjectsDetail";
-const Projects = () => {
+const Projects = ({links}) => {
   const projects = [
 {
   id:1,
@@ -46,7 +46,7 @@ const Projects = () => {
       <h3 className="section-h-gen section-h-proj">
         <span className="section-no">03. </span>Some Things I've Built
       </h3>
-      <ProjectsDetail projects={projects} />
+      <ProjectsDetail projects={projects} links={links} />
     </div>
   );
 };
