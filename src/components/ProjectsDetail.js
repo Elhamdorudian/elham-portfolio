@@ -1,5 +1,6 @@
 
-import Black from "../assets/images/black.PNG"
+import OverlayL from "../assets/images/OverlayL.PNG";
+import OverlayS from "../assets/images/OverlayS.PNG";
 const ProjectsDetail = ({projects}) => {
 
 
@@ -12,7 +13,8 @@ const ProjectsDetail = ({projects}) => {
 
           <div className="proj-imgs">
               <a href={project.link} target="_blank" rel="noreferrer">
-              <img className="overlay" src={Black} alt="My Projects"/>
+              <img className="overlay-l" src={OverlayL} alt="My Projects"/>
+              <img className="overlay-s" src={OverlayS} alt="My Projects"/>
               <img className="project-img" src={project.img} alt="My Projects"/>
               </a>
           </div>
