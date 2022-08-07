@@ -1,7 +1,6 @@
 
 import OverlayL from "../assets/images/OverlayL.PNG";
 import OverlayS from "../assets/images/OverlayS.PNG";
-import { Link } from "react-router-dom";
 const ProjectsDetail = ({projects, links}) => {
 
 
@@ -29,46 +28,32 @@ const ProjectsDetail = ({projects, links}) => {
                 </p>
             </div>
             <div className="proj-links">
-                <a href={project.github} target="_blank" rel="noreferrer" >
-                <Link
-        to={links[0].link}
-        rel="noreferrer"
-        target="_blank"
-        className="social-links"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-        >
-          {" "}
-          <path d={links[0].path}></path>
-        </svg>
-      </Link>
-                  </a>
-                <a href={project.link} target="_blank" rel="noreferrer" >
-                <Link
-        to={links[1].link}
-        rel="noreferrer"
-        target="_blank"
-        className="social-links"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="30"
-          height="30"
-          viewBox="0 0 30 30"
-        >
-          {" "}
-          <path d={links[1].path}></path>
-        </svg>
-      </Link>
-                  </a>
+            <a href={project.github} target="_blank" rel="noreferrer" className="social-links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+              >
+                {" "}
+                <path d={links[0].path}></path>
+              </svg>
+            </a>
+            <a href={project.link} target="_blank" rel="noreferrer" className="social-links">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+              >
+                {" "}
+                <path d={links[1].path}></path>
+              </svg>
+            </a>
             </div>
 
           </div>

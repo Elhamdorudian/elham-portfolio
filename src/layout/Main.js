@@ -6,7 +6,7 @@ import RightSBar from "./RightSBar";
 import Experiences from "../components/Experiences";
 import Projects from "../components/Projects";
 
-const Main = ({ socials, links }) => {
+const Main = ({ socials, links, projects }) => {
   return (
     <div className="main-wrapper">
       <div className="side-nav">
@@ -23,7 +23,7 @@ const Main = ({ socials, links }) => {
         <Introduction />
         <AboutMe />
         <Experiences />
-        <Projects links={links} />
+        <Projects links={links} projects={projects} />
       </div>
       <div className="side-nav right-nav">
         <ul className="side-nav-list right-nav-list">
