@@ -1,4 +1,24 @@
+@keyframes burgerOpens{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100vh;
+    }
+}
+
+@keyframes burgerCloses{
+    0%{
+        height: 100vh;
+    }
+    100%{
+        height: 7vh;
+        background-color: transparent;
+    }
+}
+
 .open{
+
     display: flex;
     flex-direction: column;
 }
@@ -7,10 +27,11 @@
 display: none;
 }
 .long{
-    height: 100vh;
+    animation: burgerOpens 0.4s forwards;
     z-index:1;
 }
 .short{
+    animation: burgerCloses 0.4s forwards;
 height:auto;
 }
 .burger-wrapper{
@@ -18,25 +39,28 @@ height:auto;
     justify-content: center;
     align-items: center;
     top:0;
+    right:20%;
     padding: 1rem;
     background-color: var(--navy);
-    width: 200px; 
+    width:65vw; 
+    z-index:100;
 }
 
 .burger-menu{
     fill: var(--green);
-    margin:0 auto;
+    margin-left:auto;
+    margin-right:1.5rem;
 }
 
 .navbar-icon{
-    padding:0;
+    padding-left:100%;
+    padding-top:3rem;
 }
 
 .navbar-item{
     background-color: transparent;
     display: block;
-    width:150px;
-    margin: 0 auto !important;
+    margin-left:auto;
     justify-content: center !important;
 }
 

@@ -21,12 +21,6 @@
     flex-direction: row;
 }
 
-/* .section-h-gen{
-    font-size: 1rem;
-    letter-spacing: 0.2rem;
-    color: var(--white);
-} */
-
 .section-h-exp::after{
     content: "";
     display: block;
@@ -49,7 +43,6 @@
 }
 
 .exp-details-wrapper{
-/* background-color: green; */
 width: 100%;
 padding: 0 2rem;
 font-size: 1rem;

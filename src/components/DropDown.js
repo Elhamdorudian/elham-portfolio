@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 import "../assets/styles/DropDown.css";
 
-const DropDown = ({ navbarMenu }) => {
-  const [openMenu, setOpenMenu] = useState(false);
+const DropDown = ({ navbarMenu, openMenu, setOpenMenu }) => {
+  // const [openMenu, setOpenMenu] = useState(false);
   const menuToggler = () => {
     setOpenMenu(!openMenu);
     console.log(openMenu);

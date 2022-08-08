@@ -1,9 +1,9 @@
-// import { Link } from "react-router-dom";
 import "../assets/styles/Navbar.css";
 import DropDown from "../components/DropDown";
 import RegularNav from "../components/RegularNav";
 
-const Navbar = ({ navbarMenu }) => {
+
+const Navbar = ({ navbarMenu, openMenu, setOpenMenu }) => {
   return (
     <>
       <div className="navbar-wrapper l-nav">
@@ -14,7 +14,7 @@ const Navbar = ({ navbarMenu }) => {
       </div>
       <div className="s-nav">
         <ul className="navbar-menu s-nav-list">
-          <DropDown navbarMenu={navbarMenu} />
+          <DropDown navbarMenu={navbarMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />
         </ul>
       </div>
     </>

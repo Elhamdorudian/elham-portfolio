@@ -2,6 +2,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./layout/Navbar";
 import Main from "./layout/Main";
 import "./App.css";
+import { useState } from "react";
+
 
 //--------socials imports--------//
 import Github from "../src/assets/icons/github.svg";
@@ -108,10 +110,11 @@ const projects = [
     ];
 
 function App() {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <Router>
-      <Navbar navbarMenu={navbarMenu} />
-      <Main socials={socials} links={links} projects={projects} />
+      <Navbar navbarMenu={navbarMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />
+      <Main socials={socials} links={links} projects={projects} openMenu={openMenu} />
     </Router>
   );
 }

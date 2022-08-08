@@ -5,10 +5,11 @@ import LeftSBar from "./LeftSBar";
 import RightSBar from "./RightSBar";
 import Experiences from "../components/Experiences";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
-const Main = ({ socials, links, projects }) => {
+const Main = ({ socials, links, projects, openMenu}) => {
   return (
-    <div className="main-wrapper">
+    <div className={`main-wrapper ${openMenu ? "blur" : ""}`}>
       <div className="side-nav">
         <ul className="side-nav-list">
           {socials.map((social) => {
@@ -24,6 +25,7 @@ const Main = ({ socials, links, projects }) => {
         <AboutMe />
         <Experiences />
         <Projects links={links} projects={projects} />
+        <Contact />
       </div>
       <div className="side-nav right-nav">
         <ul className="side-nav-list right-nav-list">
