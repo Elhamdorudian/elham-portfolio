@@ -1,4 +1,6 @@
 #contact{
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -10,8 +12,23 @@
 display:none !important;
 }
 
+.email-link{
+    /* text-decoration: none;
+    margin: 5% 35%; */
+}
+
+.email-link:hover{
+    background-color: var(--darkgreen);
+}
+
 @media only screen and (min-width: 768px){
     #contact-h{
         font-size:2.7rem;
+    }
+
+    .contact-desc{
+        width: 500px;
+        margin: 0 auto;
+        text-justify: inter-word;
     }
 }

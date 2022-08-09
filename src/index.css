@@ -10,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--navy);
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 code {
@@ -31,4 +32,15 @@ code {
   --gray: #8892B0;
   --dark:#484d5c;
   --black:#010d17;
+}
+
+/* ------ Adding Style to Scrollbar ------ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--dark); 
+  border-radius: 5px;
 }

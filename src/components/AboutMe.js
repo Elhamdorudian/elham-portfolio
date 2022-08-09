@@ -16,8 +16,8 @@ const AboutMe = () => {
         <span className="section-no">01. </span>About Me
       </h3>
       <div className="section-content">
-        <div className="main-content-desc">
-          <p>
+        <div>
+          <p className="main-content-desc">
             Hello! My name is Elham and I enjoy creating things that live on the
             internet. I started my career as a marketing specialist at a
             telecommunication company and got interested in programming and
@@ -25,14 +25,14 @@ const AboutMe = () => {
             been working with recently:
           </p>
 
-          <ul className="about-skills">
+          <ul className="about-skills main-content-desc">
             {skills.map((skill) => (
               <li key={skill}>{skill}</li>
             ))}
           </ul>
         </div>
         <div className="about-img-wrapper">
-          <img src={myImg} alt="myImg" />
+          <img className="about-img" src={myImg} alt="myImg" />
         </div>
       </div>
     </div>

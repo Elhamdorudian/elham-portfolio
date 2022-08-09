@@ -13,7 +13,7 @@ const Introduction = () => {
         </a>
         .
       </p>
-      <button className="cv-btn">Check out my CV</button>
+      <a className="btn" target="_blank" href="Resume.pdf" rel="noopener noreferrer" >Resume</a>
     </div>
   );
 };

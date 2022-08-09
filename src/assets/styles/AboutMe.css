@@ -1,5 +1,4 @@
 .main-content-section{
-    /* font-family: 'Roboto Mono', monospace; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 6rem;
     background-color: inherit;
@@ -22,6 +21,19 @@
     background-color: var(--dark);
 }
 
+.about-skills li{
+    list-style: none;
+}
+
+.about-skills li::before {
+    content: "▹";
+    color: var(--green);
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+
 .section-no{
     color: var(--green);
 }
@@ -32,8 +44,22 @@
     width: 40vw;
     height: 40vw;
     margin:5rem auto;
-    opacity: 90%;
+    opacity: 80%;
     z-index: -1;
+}
+
+.about-img-wrapper:hover{
+    animation: about-img-wrapper-hover 0.5s forwards !important;
+    opacity: 90%;
+}
+
+@keyframes about-img-wrapper-hover{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(0, -2px);
+    }
 }
 
 .section-content img{
@@ -45,21 +71,6 @@ width:40vw;
 height: 40vw;
 z-index:-1;
 }
-
-.about-img-wrapper:hover{
-animation: about-img-wrapper-hover 0.5s forwards;
-opacity: 100%;
-}
-
-@keyframes about-img-wrapper-hover{
-0%{
-    transform: translate(0, 0);
-}
-100%{
-    transform: translate(0, -2px);
-}
-}
-
 
 
 @media only screen and (min-width:300px) {
@@ -118,15 +129,6 @@ opacity: 100%;
          gap:20px;
          list-style: none;
     }
-    .about-skills li::before {
-        content: "▹";
-        color: var(--green);
-        font-weight: bold; 
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-      }
-
 
   }
   
