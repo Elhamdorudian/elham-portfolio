@@ -1,5 +1,8 @@
 import "../assets/styles/AboutMe.css";
 import myImg from "../assets/images/myPic.jpeg";
+import { Animated } from 'react-web-animation';
+import { faBridgeLock } from "@fortawesome/free-solid-svg-icons";
+
 const AboutMe = () => {
   const skills = [
     "Javascript",
@@ -9,6 +12,33 @@ const AboutMe = () => {
     "Jest",
     "React Testing Library",
   ];
+
+// const ScrollTrackingTimeline = new ScrollTrackingTimeline({
+//   source: document.scrollingElement,
+//   orientation: faBridgeLock,
+//   scrollOffsets: [CSS.percent(0), CSS.percent(100)]
+
+// });
+
+  const getKeyFrames = () => {
+    return [
+        { transform: 'scale(0.8)',    opacity: 0.5,     offset: 0 },
+        { transform: 'scale(1)',   opacity: 1,   offset: 0.3 },
+        // { transform: 'scale(.667)', opacity: 0.667, offset: 0.7875 },
+        // { transform: 'scale(.6)',   opacity: 0.6,   offset: 1 }
+    ];
+};
+
+const getTiming = ( duration ) => {
+    return {
+        duration,
+        easing: 'ease-in-out',
+        delay: 0,
+        iterations: 1,
+        direction: 'alternate',
+        fill: 'forwards'
+    };
+};
 
   return (
     <div className="main-content-section" id="about">
@@ -31,9 +61,9 @@ const AboutMe = () => {
             ))}
           </ul>
         </div>
-        <div className="about-img-wrapper">
+        <Animated className="about-img-wrapper" keyframes={getKeyFrames()} timing={getTiming(3000)}>
           <img className="about-img" src={myImg} alt="myImg" />
-        </div>
+        </Animated>
       </div>
     </div>
   );

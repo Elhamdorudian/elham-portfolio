@@ -17,7 +17,7 @@ const Experience = ({ experiences, setExperiences }) => {
       {experiences.map((exp) => {
         return (
           <>
-            <div className="exp-titles">
+            <div key={exp.id} className="exp-titles">
               <button
                 className={`exp-btn ${exp.isSelected ? "active" : "deactive"}`}
                 onClick={(e) => handleExp(exp.id, e)}
@@ -35,7 +35,7 @@ const Experience = ({ experiences, setExperiences }) => {
             {experiences.map((exp) => {
         return (
           <>
-            <div className={`exp-detail ${exp.isSelected ? "show-details" : "hide-details"}`}>
+            <div key={exp.id} className={`exp-detail ${exp.isSelected ? "show-details" : "hide-details"}`}>
               <p className="detail-company">@ {exp.company}</p>
               <p>{exp.location}</p>
               <p>{exp.date}</p>

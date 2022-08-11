@@ -1,0 +1,15 @@
+.footer-wrapper{
+    display:flex;
+    justify-content: center;
+    padding:3rem;
+    font-size: 0.8rem;
+}
+
+.footer-wrapper a:hover{
+    color: var(--green);
+}
+
+.footer-wrapper a{
+    text-decoration: none;
+    color:var(--gray);
+}

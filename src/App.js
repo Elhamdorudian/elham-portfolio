@@ -3,6 +3,7 @@ import Navbar from "./layout/Navbar";
 import Main from "./layout/Main";
 import "./App.css";
 import { useState } from "react";
+// import { Animated } from 'react-web-animation';
 
 
 //--------socials imports--------//
@@ -16,6 +17,7 @@ import Todo from "../src/assets/images/Todo.jpeg";
 import Timer from "../src/assets/images/Timer.jpeg";
 import MyBlog from "../src/assets/images/MyBlog.jpeg";
 import WeatherApp from "../src/assets/images/WeatherApp.jpeg";
+import Footer from "./layout/Footer";
 
 const navbarMenu = [
   { path: "#about", id: 0, name: "about", number: "01", title: "About" },
@@ -115,6 +117,7 @@ function App() {
     <Router>
       <Navbar navbarMenu={navbarMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <Main socials={socials} links={links} projects={projects} openMenu={openMenu} />
+      <Footer/>
     </Router>
   );
 }
