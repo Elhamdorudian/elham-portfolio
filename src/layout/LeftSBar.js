@@ -1,10 +1,20 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/Main.css";
 import "../assets/styles/LeftSBar.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const LeftSBar = ({ social }) => {
+
+  useEffect(() => {
+    AOS.init({duration:1500,
+    delay:50
+    });
+  },[]);
+
   return (
-    <li>
+    <li data-aos="fade-down">
       <Link
         to={social.link}
         rel="noreferrer"

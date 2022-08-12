@@ -13,3 +13,8 @@
     text-decoration: none;
     color:var(--gray);
 }
+
+.animate{
+    color:red;
+    font-size: 3rem;
+}

@@ -3,7 +3,9 @@ import Navbar from "./layout/Navbar";
 import Main from "./layout/Main";
 import "./App.css";
 import { useState } from "react";
-// import { Animated } from 'react-web-animation';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 //--------socials imports--------//
@@ -113,13 +115,22 @@ const projects = [
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
+
+  useEffect(() => {
+    AOS.init({duration:500,
+      delay:0,
+      easing: "ease-in-out",
+    });
+  },[]);
+
   return (
-    <Router>
+      <Router>
       <Navbar navbarMenu={navbarMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <Main socials={socials} links={links} projects={projects} openMenu={openMenu} />
-      <Footer/>
-    </Router>
+        <Main socials={socials} links={links} projects={projects} openMenu={openMenu} />
+        <Footer/>
+      </Router>  
   );
 }
 
 export default App;
+

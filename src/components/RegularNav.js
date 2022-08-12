@@ -1,4 +1,5 @@
 const RegularNav = ({ navbarMenu }) => {
+
   return (
     <>
       {navbarMenu.map((item) => {

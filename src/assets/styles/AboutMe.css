@@ -101,7 +101,14 @@ z-index:-1;
         gap:50px;
         text-align: justify;
         text-justify: inter-word;
+        padding-top:2rem;
     }
+    
+    .main-content-desc{
+        margin-top:0;
+    }
+
+
 
     .about-img-wrapper{
         width: 20vw;
@@ -150,5 +157,9 @@ z-index:-1;
         top: -12px;
         width: 30vw;
     }
+  }
+
+  .ann{
+      height:200px !important;
   }
 

@@ -1,8 +1,18 @@
 import "../assets/styles/Contact.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Contact = () => {
 
+  useEffect(() => {
+    AOS.init({duration:500,
+      delay:0,
+      easing: "ease-in-out",
+    });
+  },[]);
+  
   return (
-    <div className="main-content-section" id="contact">
+    <div className="main-content-section" id="contact" data-aos="fade-up">
       <h3 className="section-h-exp section-h-gen" id="contact-h">
         <span className="section-no">04. </span>Get in Touch
       </h3>

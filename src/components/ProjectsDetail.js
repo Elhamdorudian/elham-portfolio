@@ -1,25 +1,33 @@
 
 import OverlayL from "../assets/images/OverlayL.PNG";
 import OverlayS from "../assets/images/OverlayS.PNG";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const ProjectsDetail = ({projects, links}) => {
 
-
+  useEffect(() => {
+    AOS.init({duration:500,
+      delay:0,
+      easing: "ease-in-out",
+    });
+  },[]);
   return (
     <>
             {projects.map((project) => (
           
 
-      <div className="project-content" key={project.id}>
-
-          <div className="proj-imgs">
+      <div className="project-content" key={project.id} data-aos="slide-up">
+          <div className="proj-imgs" >
               <a href={project.link} target="_blank" rel="noreferrer">
               <img className="overlay-l" src={OverlayL} alt="My Projects"/>
               <img className="overlay-s" src={OverlayS} alt="My Projects"/>
               <img className="project-img" src={project.img} alt="My Projects"/>
               </a>
           </div>
-          <div className="proj-exp">
-            <h2>
+          <div className="proj-exp" >
+            <h2 data-aos="fade-up">
               <a href={project.link} target="_blank" rel="noreferrer">{project.title}</a>
             </h2>
             <div className="content-wrapper">

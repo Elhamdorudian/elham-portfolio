@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 // import { useState } from "react";
 import "../assets/styles/DropDown.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DropDown = ({ navbarMenu, openMenu, setOpenMenu }) => {
   // const [openMenu, setOpenMenu] = useState(false);
@@ -8,9 +11,17 @@ const DropDown = ({ navbarMenu, openMenu, setOpenMenu }) => {
     setOpenMenu(!openMenu);
     console.log(openMenu);
   };
+
+  useEffect(() => {
+    AOS.init({duration:500,
+      delay:0,
+      easing: "ease-in-out",
+    });
+  },[]);
+
   return (
     <div className={`burger-wrapper ${openMenu ? "long" : "short"}`}>
-      <li className="navbar-icon">
+      <li className="navbar-icon" data-aos="flip-up">
         <Link to="#" onClick={menuToggler} className="navbar-item">
           <svg
             xmlns="http://www.w3.org/2000/svg"
