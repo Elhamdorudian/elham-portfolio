@@ -54,6 +54,10 @@
     .main-content-desc{
         font-size: 1rem;
     }
+
+    .btn{
+        margin: 3rem auto 0 auto;
+    }
    
 }
 
@@ -76,7 +80,7 @@
      }
 
      .btn{
-        margin: 5% 40%;
+        margin: 5% auto;
     }
 
   }

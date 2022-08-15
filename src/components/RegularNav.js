@@ -1,4 +1,6 @@
-const RegularNav = ({ navbarMenu }) => {
+const RegularNav = ({ navbarMenu}) => {
+
+
 
   return (
     <>

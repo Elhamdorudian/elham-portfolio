@@ -1,6 +1,7 @@
 import Introduction from "../components/Introduction";
 import AboutMe from "../components/AboutMe";
 import "../assets/styles/Main.css";
+import "../assets/styles/Navbar.css";
 import LeftSBar from "./LeftSBar";
 import RightSBar from "./RightSBar";
 import Experiences from "../components/Experiences";

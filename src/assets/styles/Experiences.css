@@ -21,6 +21,10 @@
     flex-direction: row;
 }
 
+.section-h-exp{
+    font-size: 1.3rem;
+}
+
 .section-h-exp::after{
     content: "";
     display: block;

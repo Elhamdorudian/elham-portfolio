@@ -16,7 +16,7 @@ const Navbar = ({ navbarMenu, openMenu, setOpenMenu }) => {
   return (
     <>
       <div className="navbar-wrapper l-nav">
-        <ul className="navbar-menu l-nav-list" data-aos="fade-down">
+        <ul className="navbar-menu l-nav-list">
           <div className="navbar-logo">navbar logo</div>
           <RegularNav navbarMenu={navbarMenu} />
         </ul>

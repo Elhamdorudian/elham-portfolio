@@ -1,0 +1,6 @@
+.loading-wrapper{
+    display: flex;
+    color:red;
+    justify-content: center;
+    align-items: center;
+}

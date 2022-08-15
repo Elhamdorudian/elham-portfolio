@@ -12,9 +12,17 @@
 display:none !important;
 }
 
-.email-link{
-    /* text-decoration: none;
-    margin: 5% 35%; */
+.contact-btn{
+    font-size: 0.9rem;
+    font-family: 'Roboto Mono', monospace;  
+    color: var(--green);
+    background-color: transparent;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .email-link:hover{

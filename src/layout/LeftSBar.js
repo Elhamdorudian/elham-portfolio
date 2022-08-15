@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../assets/styles/Main.css";
 import "../assets/styles/LeftSBar.css";
 import AOS from "aos";
@@ -15,8 +14,8 @@ const LeftSBar = ({ social }) => {
 
   return (
     <li data-aos="fade-down">
-      <Link
-        to={social.link}
+      <a
+        href={social.link}
         rel="noreferrer"
         target="_blank"
         className="social-links"
@@ -32,7 +31,7 @@ const LeftSBar = ({ social }) => {
           {" "}
           <path d={social.path}></path>
         </svg>
-      </Link>
+      </a>
     </li>
   );
 };

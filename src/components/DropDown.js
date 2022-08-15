@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const DropDown = ({ navbarMenu, openMenu, setOpenMenu }) => {
-  // const [openMenu, setOpenMenu] = useState(false);
+
   const menuToggler = () => {
     setOpenMenu(!openMenu);
     console.log(openMenu);
@@ -52,11 +52,11 @@ const DropDown = ({ navbarMenu, openMenu, setOpenMenu }) => {
         {navbarMenu.map((item) => {
           return (
             <li className="navbar-item s-navbar-item" key={item.id}>
-              <Link to={item.path}>
+              <a href={item.path} onClick={menuToggler}>
                 <span>{item.number}.</span>
                 <br></br>
                 {item.title}
-              </Link>
+              </a>
             </li>
           );
         })}

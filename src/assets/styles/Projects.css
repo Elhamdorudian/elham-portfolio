@@ -138,7 +138,7 @@
     display: block;
     background-color: transparent;
     color:var(--white);
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 1rem;
     margin:0px;
     border-radius: 3px;
@@ -222,6 +222,7 @@
     .project-exp-content{
       background-color: var(--lightNavy);
       color:var(--gray);
+      font-size: 1rem;
       }
 
       .proj-exp h2{
