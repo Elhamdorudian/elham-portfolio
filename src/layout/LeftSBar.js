@@ -1,5 +1,6 @@
 import "../assets/styles/Main.css";
 import "../assets/styles/LeftSBar.css";
+// import Fox from "../assets/icons/fox.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

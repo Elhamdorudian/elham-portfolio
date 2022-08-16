@@ -13,7 +13,7 @@
     font-size:1.2rem;
 }
 
-.section-h::after{
+/* .section-h::after{
     content: "";
     display: block;
     position: relative;
@@ -23,7 +23,7 @@
     height: 1px;
     margin-left: 20px;
     background-color: var(--dark);
-}
+} */
 
 .about-skills li{
     list-style: none;
@@ -79,15 +79,15 @@ z-index:-1;
 
 @media only screen and (min-width:300px) {
 
-      .section-h::after{
+      /* .section-h::after{
         left:50%;
         top: -12px;
         width: 35vw;
-    }
+    } */
      
   }
 
-  @media only screen and (min-width:400px) {
+  /* @media only screen and (min-width:400px) {
 
     .section-h::after{
       left:45%;
@@ -95,7 +95,7 @@ z-index:-1;
       width: 35vw;
   }
    
-}
+} */
 
 @media only screen and (min-width: 768px) {
 
@@ -129,11 +129,11 @@ z-index:-1;
          font-size: 1.5rem;
       }
 
-      .section-h::after{
+      /* .section-h::after{
         left:40%;
         top: -12px;
         width: 40vw;
-    }
+    } */
 
     .about-skills{
          display: grid;
@@ -149,20 +149,25 @@ z-index:-1;
         padding-top: 10rem;
     }
 
-    .section-h::after{
+    .main-content-desc{
+        margin-top:0;
+        font-size:1.1rem;
+    }
+
+    /* .section-h::after{
         left:27% !important;
         top: -12px;
         width: 30vw;
-    }
+    } */
   }
 
-  @media only screen and (min-width: 1200px){
+  /* @media only screen and (min-width: 1200px){
     .section-h::after{
         left:20% !important;
         top: -12px;
         width: 30vw;
     }
-  }
+  } */
 
   .ann{
       height:200px !important;

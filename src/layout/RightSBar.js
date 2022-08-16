@@ -16,13 +16,13 @@ const RightSBar = () => {
     <>
       <li className="right-nav-website" >
         <Link
-          to="www.google.com"
+          to="https://github.com/Elhamdorudian"
           rel="noreferrer"
           target="_blank"
           className="website-url"
           data-aos="slide-right"
         >
-          www.google.com
+          Elham Portfolio
         </Link>
       </li>
       <li>

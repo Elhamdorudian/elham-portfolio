@@ -25,7 +25,7 @@
     font-size: 1.3rem;
 }
 
-.section-h-exp::after{
+/* .section-h-exp::after{
     content: "";
     display: block;
     position: relative;
@@ -35,7 +35,7 @@
     height: 1px;
     margin-left: 20px;
     background-color: var(--dark);
-}
+} */
 
 .exp-detail p::before{
     content: "▹";
@@ -96,10 +96,10 @@ display: block;
     .exp-btn{
         width: 27vw;
     }
-    .section-h-exp::after{
+    /* .section-h-exp::after{
         left:60%;
         width: 30vw;
-    }
+    } */
 }
 
 @media only screen and (min-width: 768px){
@@ -107,25 +107,25 @@ display: block;
         padding: 5rem;
     }
 
-    .section-h-exp::after{
-        left:78%;
+    /* .section-h-exp::after{
+        left:30%;
         width: 20vw;
-    }
+    } */
 }
 
-@media only screen and (min-width: 1024px){
+/* @media only screen and (min-width: 1024px){
     .section-h-exp::after{
         left:50%;
         width: 20vw;
     }
-}
+} */
 
 @media only screen and (min-width: 1200px){
     .exp-btn{
         width: 17vw;
     }
-    .section-h-exp::after{
+    /* .section-h-exp::after{
         left:33%;
         width: 25vw;
-    }
+    } */
 }

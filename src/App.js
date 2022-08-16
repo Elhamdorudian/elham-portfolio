@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom"
 import Navbar from "./layout/Navbar";
 import Main from "./layout/Main";
 import Loading from "./layout/Loading";
@@ -122,18 +122,24 @@ function App() {
   const [isLoading,setIsLoading] = useState(true);
 
   useEffect(() => {
-    AOS.init({duration:500,
-      delay:0,
-      easing: "ease-in-out",
-    });
+
+   setTimeout(() => {
+      setIsLoading(false)
+      }, 800);
+      AOS.init({duration:500,
+        delay:0,
+        easing: "ease-in-out",
+      });
   },[]);
 
   return (
       <Router>
-        {/* <Loading/> */}
-      <Navbar navbarMenu={navbarMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />
-        <Main socials={socials} links={links} projects={projects} openMenu={openMenu} />
-        <Footer/>
+
+        {isLoading && <Loading/>}
+        {!isLoading && <Navbar navbarMenu={navbarMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />}
+        {!isLoading && <Main socials={socials} links={links} projects={projects} openMenu={openMenu} />}
+        {!isLoading && <Footer/>}
+
       </Router>  
   );
 }
