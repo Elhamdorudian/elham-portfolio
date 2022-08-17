@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,700&family=Roboto+Mono:ital,wght@0,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 .navbar-wrapper{
     display:block;
     position:sticky;
@@ -70,7 +70,8 @@ display:none;
 .navbar-menu li{
     list-style: none;
     margin: 0 0 0 2rem;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+
     font-size: 0.9rem;
 }
 

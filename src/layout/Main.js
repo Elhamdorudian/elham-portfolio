@@ -8,7 +8,7 @@ import Experiences from "../components/Experiences";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
-const Main = ({ socials, links, projects, openMenu}) => {
+const Main = ({ socials, links, projects, openMenu, experiences, setExperiences}) => {
   return (
     <div className={`main-wrapper ${openMenu ? "blur" : ""}`}>
       <div className="side-nav">
@@ -24,7 +24,7 @@ const Main = ({ socials, links, projects, openMenu}) => {
       <div className="main-content">
         <Introduction />
         <AboutMe />
-        <Experiences />
+        <Experiences experiences={experiences} setExperiences={setExperiences} />
         <Projects links={links} projects={projects} />
         <Contact />
       </div>

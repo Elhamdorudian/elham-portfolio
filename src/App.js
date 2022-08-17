@@ -121,6 +121,47 @@ function App() {
   const [openMenu, setOpenMenu] = useState(false);
   const [isLoading,setIsLoading] = useState(true);
 
+
+  //---------------- Experiences -----------------//
+  const [experiences, setExperiences] = useState([
+    {
+      id: 1,
+      title: "Front-End Developer",
+      isSelected: true,
+      company: "Mobile Telecommunication Company of Iran",
+      location: "Tehran, Iran",
+      date: "May 2018 - Aug 2022",
+      content: "I have been working as a front-end developer for around two years. some of my skills are: JS, React, TS, SASS, Bootstrap,...",
+    },
+    {
+      id: 2,
+      title: "Business Analyst",
+      isSelected: false,
+      company: "Mobile Telecommunication Company of Iran",
+      location: "Tehran, Iran",
+      date: "May 2016 - Aug 2018",
+      content: "I was a Business Analyist in a Telecomunication company acting as a facilitator between technical and business teams for more than 3 years, familiar with Jira, PowerBI,...",
+    },
+    {
+      id: 3,
+      title: "MBA",
+      isSelected: false,
+      company: "Sharif University of Technology",
+      location: "Tehran, Iran",
+      date: "Sep 2013 - Feb 2016",
+      content: "I have studied MSc. in Business Administration with specialization in marketing and fincance.",
+    },
+    {
+      id: 4,
+      title: "Engineering",
+      isSelected: false,
+      company: "Sharif University of Technology",
+      location: "Tehran, Iran",
+      date: "Sep 2008 - Aug 2013",
+      content: "As I have always been interested in Math, I had decided to study Engineering in my BSc.",
+    },
+]);
+
   useEffect(() => {
 
    setTimeout(() => {
@@ -137,7 +178,7 @@ function App() {
 
         {isLoading && <Loading/>}
         {!isLoading && <Navbar navbarMenu={navbarMenu} openMenu={openMenu} setOpenMenu={setOpenMenu} />}
-        {!isLoading && <Main socials={socials} links={links} projects={projects} openMenu={openMenu} />}
+        {!isLoading && <Main socials={socials} links={links} projects={projects} openMenu={openMenu} experiences={experiences} setExperiences={setExperiences} />}
         {!isLoading && <Footer/>}
 
       </Router>  

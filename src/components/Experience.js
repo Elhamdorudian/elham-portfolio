@@ -1,12 +1,9 @@
 const Experience = ({ experiences, setExperiences }) => {
+
   const handleExp = (id, e) => {
     setExperiences(
       experiences.map((exp) => {
-        if (exp.id === id) {
-          return { ...exp, isSelected: true };
-        } else {
-          return { ...exp, isSelected: false };
-        }
+          return { ...exp, isSelected: exp.id === id };
       })
     );
   };
@@ -16,7 +13,6 @@ const Experience = ({ experiences, setExperiences }) => {
       <div className="exp-titles-wrapper">
       {experiences.map((exp) => {
         return (
-          <>
             <div key={exp.id} className="exp-titles">
               <button
                 className={`exp-btn ${exp.isSelected ? "active" : "deactive"}`}
@@ -26,7 +22,6 @@ const Experience = ({ experiences, setExperiences }) => {
                 {exp.title}
               </button>
             </div>
-          </>
         );
       })}
       </div>
@@ -34,14 +29,12 @@ const Experience = ({ experiences, setExperiences }) => {
       <div className="exp-details-wrapper">
             {experiences.map((exp) => {
         return (
-          <>
             <div key={exp.id} className={`exp-detail ${exp.isSelected ? "show-details" : "hide-details"}`}>
               <p className="detail-company">@ {exp.company}</p>
               <p>{exp.location}</p>
               <p>{exp.date}</p>
               <p>{exp.content}</p>
             </div>
-          </>
         );
       })}
       </div>

@@ -10,29 +10,6 @@ top: 0px;
     -webkit-animation: social 0.5s forwards;
 }
 
-
-.fox{
-    enable-background: 0 0 714 714;
-    fill:red;
-
-}
-.st0{fill:#1D1D1B;}
-.st1{fill:#B92C39;}
-.st2{fill:#F57665;}
-.st3{fill:#F8EBD6;}
-.st4{fill:#F4F4F4;}
-.st5{fill:#283037;}
-.st6{fill:#BE2E3F;}
-.st7{fill:#EDA058;}
-.st8{fill:#FCEBCA;}
-.st9{fill:#F8E9D3;}
-.st10{fill:#B03320;}
-.st11{fill:#46648C;}
-.st12{fill:#AACCE9;}
-.st13{fill:#DC8472;}
-.st14{fill:#73A5A6;}
-.st15{fill:#016460;} 
-
 @keyframes social{
     0%{
         top:0px;
