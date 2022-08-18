@@ -8,17 +8,27 @@
     margin:1rem 0 0 0;
     color: var(--white);
  }
+
+ .main-content-intro h1::selection{
+    background-color: var(--lightorange);
+    color:var(--dark);
+}
  
  .main-content-intro h2{
      font-size: 1.5rem;
      margin:1rem 0 0 0;
      color: var(--gray);
   }
+
+  .main-content-intro h2::selection{
+      background-color: var(--lightorange);
+      color:var(--dark);
+  }
  
  .main-content-p{
      font-size: 0.75rem;
      letter-spacing: 0.2rem;
-     color: var(--green);
+     color: var(--orange);
      margin: 1rem 0 0 0;
   }
  
@@ -30,28 +40,35 @@
  .intro-p{
      margin:1rem 0 0 0 !important;
  }
+
+ .intro-p::selection{
+    background-color: var(--lightorange);
+    color:var(--dark);
+}
  
  .main-content-desc a{
      text-decoration: none;
-     color: var(--green);
+     color: var(--orange);
  }
 
  .btn{
      font-size: 1rem;
      font-family: 'Roboto', sans-serif; 
-     color: var(--green);
+     color: var(--orange);
      background-color: transparent;
      padding: 1rem 3rem;
-     border: 1px solid var(--green);
+     border: 1px solid var(--orange);
      border-radius: 5px;
      text-decoration: none;
      text-align: center;
      margin: 3rem auto 0 auto;
  }
 
-
  .btn:hover{
-        background-color: var(--darkgreen);
+        background-color: var(--lightorange);
+        color:var(--dark);
+        font-weight: bold;
+        border: 1px solid var(--orange);
  }
 
  @media only screen and (min-width:400px) {

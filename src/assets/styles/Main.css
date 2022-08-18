@@ -4,6 +4,11 @@
     display: flex;  
 }
 
+.main-wrapper::selection{
+    background-color: var(--lightorange);
+    color:var(--dark);
+}
+
 .main-content{
     padding: 3rem 2rem 2rem 2rem;
     width: 100%;

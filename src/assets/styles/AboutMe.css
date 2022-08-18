@@ -9,8 +9,18 @@
     color: var(--white);
 }
 
+.section-h-gen::selection{
+    background-color: var(--orange);
+    color:var(--dark);
+}
+
 .main-content-desc{
     font-size:1.2rem;
+}
+
+.main-content-desc::selection{
+    background-color: var(--orange);
+    color:var(--dark);
 }
 
 .about-skills li{
@@ -19,7 +29,7 @@
 
 .about-skills li::before {
     content: "▹";
-    color: var(--green);
+    color: var(--orange);
     font-weight: bold; 
     display: inline-block;
     width: 1em;
@@ -27,11 +37,11 @@
   }
 
 .section-no{
-    color: var(--green);
+    color: var(--orange);
 }
 
 .about-img-wrapper{
-    border: 2px solid var(--green);
+    border: 2px solid var(--orange);
     border-radius: 5px;
     width: 40vw;
     height: 40vw;

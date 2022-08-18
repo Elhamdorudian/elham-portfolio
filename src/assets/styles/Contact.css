@@ -13,7 +13,7 @@ display:none !important;
 }
 
 .email-link:hover{
-    background-color: var(--darkgreen);
+    background-color: var(--lightorange);
 }
 
 @media only screen and (min-width: 768px){

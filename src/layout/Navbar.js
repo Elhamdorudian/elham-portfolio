@@ -19,7 +19,7 @@ const Navbar = ({ navbarMenu, openMenu, setOpenMenu }) => {
         <ul className="navbar-menu l-nav-list">
           <div className="navbar-logo">
             <svg height="70" width="74.69">
-              <text className="logo-svg" x="8" y="47">Eli</text>
+              <text className="logo-svg" x="0" y="53">Eli</text>
             </svg>
           </div>
           <RegularNav navbarMenu={navbarMenu} />

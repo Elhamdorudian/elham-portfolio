@@ -5,7 +5,7 @@
     letter-spacing: 0.2rem;
 }
 .website-url:hover{
-    color: var(--green);
+    color: var(--orange);
     animation: url 0.5s forwards;
     -webkit-animation: url 0.5s forwards;
 }
