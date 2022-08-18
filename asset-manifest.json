@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/elham-portfolio/static/css/main.8a3142db.css",
+    "main.js": "/elham-portfolio/static/js/main.0fef8d24.js",
+    "static/js/787.28cb0dcd.chunk.js": "/elham-portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/MyBlog.jpeg": "/elham-portfolio/static/media/MyBlog.3a8976a350fe81d7e78e.jpeg",
+    "static/media/myPic.jpeg": "/elham-portfolio/static/media/myPic.2ae3a30a6cd0aec4acd9.jpeg",
+    "static/media/WeatherApp.jpeg": "/elham-portfolio/static/media/WeatherApp.04d339e825a9e6fcea20.jpeg",
+    "static/media/Timer.jpeg": "/elham-portfolio/static/media/Timer.39366392a418afd526a1.jpeg",
+    "static/media/Todo.jpeg": "/elham-portfolio/static/media/Todo.bfe273f32976e3814c72.jpeg",
+    "static/media/OverlayS.PNG": "/elham-portfolio/static/media/OverlayS.136f5a00be2b3b7bf454.PNG",
+    "static/media/OverlayL.PNG": "/elham-portfolio/static/media/OverlayL.c6b2dd882a5aa4e0a994.PNG",
+    "index.html": "/elham-portfolio/index.html",
+    "static/media/github.svg": "/elham-portfolio/static/media/github.0e83bc59c444fe481a785a2cc3cbb0a9.svg",
+    "static/media/linkedin.svg": "/elham-portfolio/static/media/linkedin.e20896a8eba8b7704ff3440083dc97a5.svg",
+    "static/media/link.svg": "/elham-portfolio/static/media/link.e57fe67926f17de16a0e6ace3b6c493a.svg",
+    "main.8a3142db.css.map": "/elham-portfolio/static/css/main.8a3142db.css.map",
+    "main.0fef8d24.js.map": "/elham-portfolio/static/js/main.0fef8d24.js.map",
+    "787.28cb0dcd.chunk.js.map": "/elham-portfolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a3142db.css",
+    "static/js/main.0fef8d24.js"
+  ]
+}
