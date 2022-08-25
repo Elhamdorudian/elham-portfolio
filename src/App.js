@@ -15,7 +15,6 @@ import Link from "../src/assets/icons/link.svg";
 
 //--------Projects imports--------//
 import Todo from "../src/assets/images/Todo.jpeg";
-import Timer from "../src/assets/images/Timer.jpeg";
 import MyBlog from "../src/assets/images/MyBlog.jpeg";
 import WeatherApp from "../src/assets/images/WeatherApp.jpeg";
 import Footer from "./layout/Footer";
@@ -105,14 +104,6 @@ const projects = [
     content: "Use Todo List app to add your tasks and manage them easily. You can both add tasks and delete them if needed. It has also a search bar where you can easily search the tasks.",
     link:"https://elhamdorudian.github.io/Todo_List/",
     github:"https://github.com/Elhamdorudian/Todo_List"
-  },
-  {
-    id:4,
-    title:"Timer",
-    img: Timer,
-    content: "It is a simple Timer app which shows you the time in detal. I wrote this project to make use of Math library in Javascript.",
-    link:"https://elhamdorudian.github.io/simple-timer/",
-    github:"https://github.com/Elhamdorudian/simple-timer"
   },
   
     ];
